@@ -1,5 +1,8 @@
 `lib/extra.h` file is not included in any of the source files.
 
+
+## Single library Mode (#159b230155fa2b14f05686d482db66db90371502)
+
 Build logs:
 - `clean.build.log` clean build
 - `commented_extra_header.build.log`  changed the `lib/BUILD.bazel` file
