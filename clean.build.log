@@ -1,0 +1,8 @@
+Build options: --distdir=/nix/store/0mk8qks2szk0l4z5apdn14wd0p8f7imw-bazel-deps --override_repository='remote_java_tools_linux=/nix/store/vf3s04423zwl08pj8zwnn6p00dqlrvwv-remote_java_tools_linux' --host_javabase=@local_jdk//:jdk --explain=build.log --verbose_explanations --experimental_cc_implementation_deps
+Executing action 'Creating source manifest for //app:main': no entry in the cache (action is new).
+Executing action 'Writing file app/main-2.params': no entry in the cache (action is new).
+Executing action 'BazelWorkspaceStatusAction stable-status.txt': unconditional execution is requested.
+Executing action 'Compiling lib/lib.cpp': no entry in the cache (action is new).
+Executing action 'Compiling app/main.cpp': no entry in the cache (action is new).
+Executing action 'Creating runfiles tree bazel-out/k8-fastbuild/bin/app/main.runfiles': no entry in the cache (action is new).
+Executing action 'Linking app/main': no entry in the cache (action is new).

@@ -1,0 +1,66 @@
+Build options: --distdir=/nix/store/0mk8qks2szk0l4z5apdn14wd0p8f7imw-bazel-deps --override_repository='remote_java_tools_linux=/nix/store/vf3s04423zwl08pj8zwnn6p00dqlrvwv-remote_java_tools_linux' --host_javabase=@local_jdk//:jdk --explain=build.log --verbose_explanations --experimental_cc_implementation_deps
+Executing action 'BazelWorkspaceStatusAction stable-status.txt': unconditional execution is requested.
+Executing action 'Compiling lib/lib.cpp': action command has changed.
+New action: Compiling lib/lib.cpp
+  Command: /usr/bin/gcc
+  Argument: -U_FORTIFY_SOURCE
+  Argument: -fstack-protector
+  Argument: -Wall
+  Argument: -Wunused-but-set-parameter
+  Argument: -Wno-free-nonheap-object
+  Argument: -fno-omit-frame-pointer
+  Argument: '-std=c++0x'
+  Argument: -MD
+  Argument: -MF
+  Argument: bazel-out/k8-fastbuild/bin/lib/_objs/lib/lib.pic.d
+  Argument: '-frandom-seed=bazel-out/k8-fastbuild/bin/lib/_objs/lib/lib.pic.o'
+  Argument: -fPIC
+  Argument: -iquote
+  Argument: .
+  Argument: -iquote
+  Argument: bazel-out/k8-fastbuild/bin
+  Argument: -fno-canonical-system-headers
+  Argument: -Wno-builtin-macro-redefined
+  Argument: '-D__DATE__="redacted"'
+  Argument: '-D__TIMESTAMP__="redacted"'
+  Argument: '-D__TIME__="redacted"'
+  Argument: -c
+  Argument: lib/lib.cpp
+  Argument: -o
+  Argument: bazel-out/k8-fastbuild/bin/lib/_objs/lib/lib.pic.o
+  Declared include source: lib/lib.h
+.
+Executing action 'Compiling app/main.cpp': action command has changed.
+New action: Compiling app/main.cpp
+  Command: /usr/bin/gcc
+  Argument: -U_FORTIFY_SOURCE
+  Argument: -fstack-protector
+  Argument: -Wall
+  Argument: -Wunused-but-set-parameter
+  Argument: -Wno-free-nonheap-object
+  Argument: -fno-omit-frame-pointer
+  Argument: '-std=c++0x'
+  Argument: -MD
+  Argument: -MF
+  Argument: bazel-out/k8-fastbuild/bin/app/_objs/main/main.pic.d
+  Argument: '-frandom-seed=bazel-out/k8-fastbuild/bin/app/_objs/main/main.pic.o'
+  Argument: -fPIC
+  Argument: -iquote
+  Argument: .
+  Argument: -iquote
+  Argument: bazel-out/k8-fastbuild/bin
+  Argument: -iquote
+  Argument: external/bazel_tools
+  Argument: -iquote
+  Argument: bazel-out/k8-fastbuild/bin/external/bazel_tools
+  Argument: -fno-canonical-system-headers
+  Argument: -Wno-builtin-macro-redefined
+  Argument: '-D__DATE__="redacted"'
+  Argument: '-D__TIMESTAMP__="redacted"'
+  Argument: '-D__TIME__="redacted"'
+  Argument: -c
+  Argument: app/main.cpp
+  Argument: -o
+  Argument: bazel-out/k8-fastbuild/bin/app/_objs/main/main.pic.o
+  Declared include source: lib/lib.h
+.
