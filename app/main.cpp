@@ -1,5 +1,5 @@
-#include "lib/lib.h"
+#include "slib/lib.h"
 
 int main() {
-    return lib();
+    return slib();
 }

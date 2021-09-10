@@ -1,0 +1,11 @@
+cc_library(
+    name = "slib",
+    srcs = [
+        "lib.cpp",
+    ],
+    hdrs = ["lib.h"],
+    visibility = ["//visibility:public"],
+    # deps = ["//lib"],
+    implementation_deps = ["//lib"],
+)
+

@@ -22,3 +22,20 @@ cc_library(
 
 The above actions cause `app/main.cpp` to recompile, which I don't expect to happen. I suspect it
 due to `Declared include source: lib/extra.h` being used as a key for `main.cpp` file.
+
+
+## Indirection
+
+Added `slib` as intermidiate library between `app` and `lib` (`app` -> `slib` -> `lib`).
+
+This did not make difference `lib/extra.h` still shows up as change in in all three compilation units.
+
+
+## Change to implementation_deps
+
+Converted `lib` to private dependency of `slib` using `implementation_deps` experimental feature of
+`cc_library`.
+
+Now `main.cpp` does not recompile and `lib/extra.h` does not show up in its key. However, it still
+affects `slib`.
+
